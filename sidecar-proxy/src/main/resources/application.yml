@@ -1,0 +1,20 @@
+
+spring:
+    application:
+        name: sidecar
+server:
+    port: 8084
+
+eureka:
+    instance:
+        hostname: localhost
+        lease-renewal-interval-in-seconds: 2
+    client:
+        service-url:
+            defaultZone: http://127.0.0.1:8761/eureka
+        healthcheck:
+            enabled: true
+sidecar:
+    port: 3000
+    health-uri: http://localhost:3000/health
+
