@@ -1,4 +1,4 @@
-package com.silva.achoapp3;
+package com.silva.echoapp3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,15 +8,10 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-//
-//@EnableEurekaClient
-//@EnableZuulProxy
-//
-// @EnableDiscoveryClient
-public class AchoApp3Application {
+public class EchoApp3Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AchoApp3Application.class, args);
+		SpringApplication.run(EchoApp3Application.class, args);
 	}
 	@Bean
 	public RestTemplate restTemplate() {

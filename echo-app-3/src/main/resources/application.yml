@@ -1,6 +1,6 @@
 spring:
     application:
-        name: acho-app-3
+        name: echo-app-3
 eureka:
     instance:
         hostname: localhost

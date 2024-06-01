@@ -1,4 +1,4 @@
-package com.silva.achoapp3;
+package com.silva.echoapp3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
