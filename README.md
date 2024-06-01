@@ -2,23 +2,23 @@
 
 * [Sidecar Spring Reference](https://www.baeldung.com/spring-cloud-sidecar-intro)
 ## Commmands
-´´´Java
-//Call node app
+````bash
+#Call node app
 curl http://localhost:3000/health
-// {status":"UP"}
+# {status":"UP"}
 
-// spring sidecar: To check the sidecar application, let’s query it for the metadata of the echo service:
-//Spring registers a service with the given name “sidecar” in the Eureka Server.
+# spring sidecar: To check the sidecar application, let’s query it for the metadata of the echo service:
+#Spring registers a service with the given name “sidecar” in the Eureka Server.
 curl http://localhost:8084/hosts/sidecar
 
-//Echo application, it hits sidecar (8084) wich hits the eco-app-3 (port 8085)
+#sidecar(8084) show info from echo-app-3(8085)
+curl http://localhost:8084/hosts/echo-app-3
+
+#sidecar(8084) show info from node-app(3000)
 curl http://localhost:8084/hosts/echo-app-3
 
 
-//echo app call node app
-curl http://localhost:8085/hosts/hello/Dorival
-
-´´´
+````
 1. In this tutorial, we’ll learn more about Spring Cloud Sidecar with working examples.
    We will take advantage of Spring Cloud and its ecosystem by using 
 Spring Cloud Netflix Sidecar and its useful integrations with Spring Cloud ecossystem.

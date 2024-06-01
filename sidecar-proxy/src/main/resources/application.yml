@@ -17,5 +17,3 @@ eureka:
 sidecar:
     port: 3000
     health-uri: http://localhost:3000/health
-    hostname: hello
-
